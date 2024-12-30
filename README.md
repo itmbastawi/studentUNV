@@ -35,3 +35,39 @@ Built it using Flask, SQLite. make sure the REST API is asynchronous using Async
     Technologies:
         Database: SQLite for storing user progress data.
         Analytics: Python with Plotly
+
+// File Structure
+src/
+  ├── assets/
+  │   └── logo.svg
+  ├── components/
+  │   ├── layout/
+  │   │   ├── AppHeader.vue
+  │   │   ├── AppSidebar.vue
+  │   │   └── AppFooter.vue
+  │   ├── course/
+  │   │   ├── CourseCard.vue
+  │   │   ├── CourseForm.vue
+  │   │   ├── LessonList.vue
+  │   │   └── QuizForm.vue
+  │   ├── dashboard/
+  │   │   ├── StatCard.vue
+  │   │   ├── ActivityFeed.vue
+  │   │   └── ProgressChart.vue
+  │   └── ui/
+  │       ├── BaseButton.vue
+  │       ├── BaseInput.vue
+  │       └── BaseCard.vue
+  ├── views/
+  │   ├── Dashboard.vue
+  │   ├── CourseManagement.vue
+  │   ├── StudentList.vue
+  │   └── Analytics.vue
+  ├── router/
+  │   └── index.js
+  ├── store/
+  │   ├── index.js
+  │   ├── modules/
+  │   │   ├── course.js
+  │   │   └── user.js
+  └── App.vue
